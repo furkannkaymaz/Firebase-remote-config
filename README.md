@@ -1,5 +1,9 @@
 ### Firebase Remote Config App
 
+##### → What is Firebase Remote Confing? ↓
+
+##### Firebase Remote Config is a cloud service that lets you change the behavior and appearance of your app without requiring users to download an app update. When using Remote Config, you create in-app default values that control the behavior and appearance of your app.
+
 ##### → First you have to integrate Firebase into your project. You can do this from the link below. ↓
 
 ##### https://firebase.google.com/docs/android/setup
