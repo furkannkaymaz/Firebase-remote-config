@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "308821788743",
+    "project_id": "remote-config-64fbc",
+    "storage_bucket": "remote-config-64fbc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:308821788743:android:1c98f849317afb4ace0962",
+        "android_client_info": {
+          "package_name": "furkan.firebase"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "308821788743-hsduinm8k41o8atob2djlbu8j58m5v9k.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyATrhQI1qSXfJ21jf_odgCr9ZjwO-WS4lE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "308821788743-hsduinm8k41o8atob2djlbu8j58m5v9k.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

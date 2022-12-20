@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<defaults>
+    <entry>
+        <key>warning_text</key>
+        <value>No Error</value>
+        <value />
+    </entry>
+</defaults>
