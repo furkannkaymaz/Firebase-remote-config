@@ -9,15 +9,19 @@ import com.google.firebase.remoteconfig.FirebaseRemoteConfig
 import com.google.firebase.remoteconfig.ktx.get
 import com.google.firebase.remoteconfig.ktx.remoteConfig
 import com.google.firebase.remoteconfig.ktx.remoteConfigSettings
+import furkan.firebase.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
+    private lateinit var binding: ActivityMainBinding
 
     companion object{
         const val WARNING_TEXT = "warning_text"
     }
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
+        binding = ActivityMainBinding.inflate(layoutInflater)
+        val view = binding.root
+        setContentView(view)
 
         val remoteConfig: FirebaseRemoteConfig = Firebase.remoteConfig
 
@@ -30,9 +34,9 @@ class MainActivity : AppCompatActivity() {
         remoteConfig.fetchAndActivate()
             .addOnCompleteListener(this) { task ->
                 if (task.isSuccessful) {
-                    findViewById<TextView>(R.id.tvWarning).text= remoteConfig[WARNING_TEXT].asString()
+                    binding.tvWarning.text = remoteConfig[WARNING_TEXT].asString()
                 } else {
-                    findViewById<TextView>(R.id.tvWarning).text= remoteConfig[WARNING_TEXT].asString()
+                    binding.tvWarning.text  = remoteConfig[WARNING_TEXT].asString()
                 }
 
             }
